@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "#stopgrowth:growth_restart_food/cow",
+    "#stopgrowth:growth_restart_food/sheep",
+    "#stopgrowth:growth_restart_food/pig",
+    "#stopgrowth:growth_restart_food/chicken",
+    "#stopgrowth:growth_restart_food/horse",
+    "#stopgrowth:growth_restart_food/donkey",
+    "#stopgrowth:growth_restart_food/mule",
+    "#stopgrowth:growth_restart_food/llama",
+    "#stopgrowth:growth_restart_food/fox",
+    "#stopgrowth:growth_restart_food/panda",
+    "#stopgrowth:growth_restart_food/turtle",
+    "#stopgrowth:growth_restart_food/bee",
+    "#stopgrowth:growth_restart_food/frog",
+    "#stopgrowth:growth_restart_food/happy_ghast"
+  ]
+}
