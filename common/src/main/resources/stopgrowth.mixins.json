@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "net.fodoth.skina.stopgrowth.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "client": [
+  ],
+  "mixins": [
+    "AgeableMobMixin",
+    "AnimalMixin",
+    "HappyGhastMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

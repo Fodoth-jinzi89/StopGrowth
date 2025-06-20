@@ -1,0 +1,38 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "stopgrowth"
+version = "${version}"
+displayName = "StopGrowth"
+authors = "Fodoth_jinzi89"
+description = '''
+Stop growth of baby animals by feeding them with special food.
+'''
+#logoFile = ""
+
+[[dependencies.stopgrowth]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.stopgrowth]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.6,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.stopgrowth]]
+modId = "architectury"
+type = "required"
+versionRange = "[17.0.4,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[mixins]]
+config = "stopgrowth.mixins.json"
