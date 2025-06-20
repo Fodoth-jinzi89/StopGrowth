@@ -19,7 +19,7 @@ Growth state is persistent and can be toggled back and forth by interacting with
 
 ## ⚙ Requirements
 
-- [Architectury API](https://modrinth.com/mod/architectury) (required at runtime)
+- [Architectury API](https://modrinth.com/mod/architectury-api) (required at runtime)
 - [Fabric Loader](https://fabricmc.net/use/) or [NeoForge](https://neoforged.net/)
 - [Mixin](https://github.com/SpongePowered/Mixin) (included via loader integration)
 
@@ -35,8 +35,7 @@ Growth state is persistent and can be toggled back and forth by interacting with
 
 ## 🐾 Supported Entities
 
-- [x] Happy Ghast  
-  (More entities can be added via `HasStopFood` and `AgeGrowthControl` interfaces.)
+- Happy Ghast  
 
 ---
 
