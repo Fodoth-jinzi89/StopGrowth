@@ -14,6 +14,23 @@
     "#stopgrowth:growth_restart_food/turtle",
     "#stopgrowth:growth_restart_food/bee",
     "#stopgrowth:growth_restart_food/frog",
+    "#stopgrowth:growth_restart_food/armadillo",
+    "#stopgrowth:growth_restart_food/axolotl",
+    "#stopgrowth:growth_restart_food/tadpole",
+    "#stopgrowth:growth_restart_food/dolphin",
+    "#stopgrowth:growth_restart_food/camel",
+    "#stopgrowth:growth_restart_food/cat",
+    "#stopgrowth:growth_restart_food/goat",
+    "#stopgrowth:growth_restart_food/hoglin",
+    "#stopgrowth:growth_restart_food/mooshroom",
+    "#stopgrowth:growth_restart_food/ocelot",
+    "#stopgrowth:growth_restart_food/polar_bear",
+    "#stopgrowth:growth_restart_food/rabbit",
+    "#stopgrowth:growth_restart_food/sniffer",
+    "#stopgrowth:growth_restart_food/trader_llama",
+    "#stopgrowth:growth_restart_food/wolf",
+    "#stopgrowth:growth_restart_food/strider",
+    "#stopgrowth:growth_restart_food/villager",
     "#stopgrowth:growth_restart_food/happy_ghast"
   ]
 }

@@ -3,6 +3,7 @@ package net.fodoth.skina.stopgrowth.mixin;
 import net.fodoth.skina.stopgrowth.mixinutil.FoodUtil;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.animal.camel.Camel;
 import net.minecraft.world.entity.animal.horse.Horse;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;

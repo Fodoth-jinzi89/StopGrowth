@@ -2,7 +2,6 @@
   "replace": false,
   "values": [
     "minecraft:spider_eye",
-    "minecraft:resin_clump",
-    "minecraft:resin_brick"
+    "minecraft:resin_clump"
   ]
 }

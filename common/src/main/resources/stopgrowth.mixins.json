@@ -6,9 +6,15 @@
   "client": [
   ],
   "mixins": [
+    "AbstractChestedHorseMixin",
+    "AbstractHorseMixin",
     "AgeableMobMixin",
     "AnimalMixin",
-    "HorseMixin"
+    "CamelMixin",
+    "DolphinMixin",
+    "HorseMixin",
+    "TadpoleMixin",
+    "VillagerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

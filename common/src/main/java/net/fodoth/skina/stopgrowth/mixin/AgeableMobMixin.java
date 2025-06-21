@@ -3,6 +3,7 @@ package net.fodoth.skina.stopgrowth.mixin;
 import net.fodoth.skina.stopgrowth.mixinutil.AgeGrowthControl;
 import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.animal.axolotl.Axolotl;
 import net.minecraft.world.entity.animal.horse.Horse;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.storage.ValueInput;
