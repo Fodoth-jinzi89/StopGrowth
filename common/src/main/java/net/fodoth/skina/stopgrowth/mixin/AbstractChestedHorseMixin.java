@@ -2,20 +2,15 @@ package net.fodoth.skina.stopgrowth.mixin;
 
 import net.fodoth.skina.stopgrowth.mixinutil.FoodUtil;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.animal.horse.AbstractChestedHorse;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(AbstractChestedHorse.class)
-public abstract class AbstractChestedHorseMixin extends AbstractHorseMixin{
-
+public abstract class AbstractChestedHorseMixin extends AbstractHorseMixin {
 
     @Redirect(
             method = "mobInteract",
@@ -30,26 +25,26 @@ public abstract class AbstractChestedHorseMixin extends AbstractHorseMixin{
         if (!self.isTamed()) {
             if (FoodUtil.isStopFood(self, stack) || FoodUtil.isRestartFood(self, stack)) {
                 if (!self.isFood(stack)) {
-                    // 你当前的 Mixin 类也会被视作目标类（AbstractChestedHorse）的子类，因此 this.handleEating 是合法调用
                     this.handleEating(player, stack);
                 }
-                return true; // 假装已驯服，阻止 makeMad + return 分支
+                return true;
             }
         }
 
         return self.isTamed();
     }
 
-
-    @Redirect(method = "mobInteract", at = @At(
-            value = "INVOKE",
-            target = "Lnet/minecraft/world/entity/animal/horse/AbstractChestedHorse;isFood(Lnet/minecraft/world/item/ItemStack;)Z"))
+    @Redirect(
+            method = "mobInteract",
+            at = @At(
+                    value = "INVOKE",
+                    target = "Lnet/minecraft/world/entity/animal/horse/AbstractChestedHorse;isFood(Lnet/minecraft/world/item/ItemStack;)Z"
+            )
+    )
     private boolean stopgrowth$redirectIsFood(AbstractChestedHorse self, ItemStack stack) {
         if (FoodUtil.isStopFood(self, stack) || FoodUtil.isRestartFood(self, stack)) {
             return false;
         }
-    return self.isFood(stack);
+        return self.isFood(stack);
     }
-
-
 }
